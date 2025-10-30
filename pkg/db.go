@@ -76,3 +76,7 @@ func (s *Storage[T]) Get(id string) [](*Entity[T]) {
 	}
 	return [](*Entity[T]){}
 }
+
+func (s *Storage[T]) Clear() {
+	s.store.Clear()
+}
