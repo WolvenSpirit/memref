@@ -4,6 +4,10 @@ These tags are meant to be points from where to potentially grab the data that i
 
 Tag would only be viable if the data set is sustainable, it's not meant to be used for very large sets of records.
 
+### Important 
+These are references so they can be modified by any block that still holds the reference.
+For accessing data between goroutines, each entity should hold a mutex that locks when mutating that entity. This also means, since we store only references there is no update function as the entity can be modified directly and the updated value would be returned to the other concurrent piece of logic that pulls the ref from the store.
+
 This works best with small hierarchies that intersect such as:
 
 Given an Entity `User`
