@@ -1,3 +1,3 @@
-module github.com/wolvenspirit/memdb
+module github.com/wolvenspirit/memref
 
 go 1.25.3

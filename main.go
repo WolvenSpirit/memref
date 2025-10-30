@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	memdb "github.com/wolvenspirit/memdb/pkg"
+	memdb "github.com/wolvenspirit/memref/pkg"
 )
 
 type myData struct {
